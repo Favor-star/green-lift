@@ -11,11 +11,11 @@ export const Impact = () => {
                     and non-profits with affordable technology solutions, bridging the digital divide and fostering digital literacy.
                 </p>
                 <div className="flex gap-2 w-fit mx-auto">
-                    <Button variant={'outline'} className="text-green-500 border-green-500 mx-auto block mt-10">
-                        Learn more
+                    <Button variant={'outline'} className="text-green-500 items-start border-green-500  mt-10">
+                      <span className="-mt-[0.7px]">  Learn more</span>
                     </Button>
-                    <Button className="bg-green-500 text-white mx-auto block mt-10">
-                        Donate now
+                    <Button className=" bg-green-500 text-white mx-auto block mt-10">
+                       <span  className="-mt-[0.7px]"> Donate now</span>
                     </Button>
                 </div>
             </div>

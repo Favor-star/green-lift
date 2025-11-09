@@ -7,8 +7,8 @@ export const Header = () => {
             <header className="flex max-w-screen-lg mx-auto justify-between items-center px-4">
 
                 <div className='flex items-center'>
-                    <img src={Logo} alt="Green Lift Logo" className="h-fit p-2 w-15 inline-block mr-2  border-[2px] border-white/70 rounded-lg" />
-                  <h1 className='font-medium text-lg leading-tight'>  Green Lift <br/> Innovation</h1>
+                    <img src={Logo} alt="Green Lift Logo" className="h-fit w-15 inline-block mr-2  rounded-xl" />
+                  <h1 className='font-medium text-base leading-tight'>  Green Lift Innovation</h1>
                 </div>
                 <ul className="flex space-x-4 items-center">
                     <li>

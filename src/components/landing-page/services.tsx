@@ -1,30 +1,21 @@
 import type { TablerIcon } from "@tabler/icons-react";
-import { IconDeviceLaptop } from "@tabler/icons-react";
+import { IconDeviceLaptop, IconRecycle, IconShieldCheck, IconShoppingCart, IconTool, IconUsersGroup } from "@tabler/icons-react";
 export const Services = () => {
     return (
         <section className="mb-10">
             <h2 className="text-3xl font-bold text-center">Our Services</h2>
             <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-screen-lg mx-auto px-4">
-                <ServiceCard
-                    title="IT Maintenance"
-                    description="Comprehensive IT maintenance services to ensure your systems run smoothly and efficiently."
-                    Icon={IconDeviceLaptop}
-                />
+
                 {
-                    Array(5).fill(null).map((_, index) => (
+                    services.map(({ title, description, icon }) => (
                         <ServiceCard
-                            key={index}
-                            title="IT Refurbishment"
-                            description="Professional refurbishment services to extend the life of your IT equipment and reduce e-waste."
-                            Icon={IconDeviceLaptop}
+                            key={title}
+                            title={title}
+                            description={description}
+                            Icon={icon}
                         />
                     ))
                 }
-                <ServiceCard
-                    title="Device Repair"
-                    description="Expert repair services for a wide range of devices, minimizing downtime and extending device lifespan."
-                    Icon={IconDeviceLaptop}
-                />
             </div>
         </section>
     )
@@ -40,3 +31,36 @@ const ServiceCard = ({ title, description, Icon }: { title: string; description:
         </article>
     )
 }
+
+const services = [
+    {
+        title: "IT Maintanance",
+        description: "Reliable maintanance and repair services to extend  the lifespan of your IT equipment",
+        icon: IconTool
+    },
+    {
+        title: "Refurbished Sales & Donations",
+        description: "Quality refurbished computers and devices for sales or donations to promote digital inclusion",
+        icon: IconDeviceLaptop
+    },
+    {
+        title: "E-waste & Data Security",
+        description: "Eco-friendly disposal and certified data erasure to protect your business and the environment.",
+        icon: IconRecycle
+    },
+    {
+        title: "Buy IT Services",
+        description: "Easy access to tailored IT services packages - maintainance, upgrades or installations.",
+        icon: IconShoppingCart
+    },
+    {
+        title: "Electrical & Safety Testing",
+        description: "PAT and safety checks to ensure your workspace meets technical and safety standards.",
+        icon: IconShieldCheck
+    },
+    {
+        title: "Event Tech Support",
+        description: "Proffessional IT and Av setup for smooth, sustainable business events.",
+        icon: IconUsersGroup
+    },
+]

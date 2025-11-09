@@ -16,6 +16,7 @@ export const AboutUs = () => {
                 <Button variant={"outline"} size={"lg"} className="border-green-500 text-green-500 mt-8 mx-auto block">
                     Follow us
                 </Button>
+                <div id="services"/>
             </div>
         </section>
     )
