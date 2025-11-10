@@ -1,9 +1,10 @@
-import { IconBrandFacebook, IconMail, IconMapPin,  IconSend, type TablerIcon } from "@tabler/icons-react"
-import { Button } from "../ui/button";
+import { IconBrandFacebook, IconMail, IconMapPin,   type TablerIcon } from "@tabler/icons-react"
+
+import { ContactForm } from "./contact-form";
 
 export const ContactUs = () => {
     return (
-        <section className="mb-10">
+        <section className="mb-10" id="contact-us">
             <article className="mt-10 max-w-screen-lg mx-auto px-4">
                 <h2 className="text-3xl font-bold text-center">Contact Us</h2>
                 <div className=" grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
@@ -30,30 +31,7 @@ export const ContactUs = () => {
                         </section>
 
                     </div>
-                    <form className="flex flex-col gap-4 ">
-                        <input
-
-                            type="text"
-                            placeholder="Your Name"
-                            className="border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-green-500"
-                        />
-                        <input
-                            type="email"
-                            placeholder="Your Email"
-                            className="border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-green-500"
-                        />
-                        <textarea
-                            placeholder="Your Message"
-                            className="border border-gray-300 rounded-md p-2 h-32 focus:outline-none focus:ring-2 focus:ring-green-500"
-                        ></textarea>
-                        <Button
-                            type="submit"
-                            className="bg-green-500 text-white rounded-md p-2 hover:bg-green-600 transition-colors"
-                        >
-                            Send Message
-                            <IconSend strokeWidth={1.4} size={20} className=""/>   
-                        </Button>
-                    </form>
+                    <ContactForm/>
                 </div>
             </article>
         </section>

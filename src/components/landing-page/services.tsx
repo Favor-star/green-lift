@@ -26,7 +26,7 @@ const ServiceCard = ({ title, description, Icon }: { title: string; description:
     return (
         <article className="flex flex-col gap-2  items-center justify-center p-3 rounded-xl bg-green-50 border border-green-300 hover:bg-green-200 transition-all">
             <Icon strokeWidth={1.4} size={30} className="text-green-500" />
-            <h3 className="text-xl font-semibold">{title}</h3>
+            <h3 className="text-xl font-semibold text-center">{title}</h3>
             <p className="text-center text-gray-600 max-w-sm">{description}</p>
         </article>
     )
